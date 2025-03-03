@@ -1,6 +1,9 @@
+"use client"
+
 import Image from 'next/image'
-import React from 'react'
-import { Phone, Mail, Calendar, Home } from 'lucide-react'
+import React, { useState } from 'react'
+import { Phone, Mail, Calendar, Home, X } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const contactInformations = [
     {
@@ -21,6 +24,12 @@ const contactInformations = [
     }
 ]
 const Contact = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const router = useRouter()
+    const handleClose = () => {
+        router.push('/')
+        setIsOpen(false)
+    }
     return (
         <div className='flex justify-between items-center w-full h-screen'>
 
@@ -33,7 +42,15 @@ const Contact = () => {
                 />
 
             </div>
-            <div className='w-1/2 h-full flex flex-col justify-center items-center bg-secondary'>
+            <div className='w-1/2 bg-secondary h-full '>
+            <div 
+            onClick={handleClose}
+            className='flex justify-end w-full p-4 cursor-pointer'>
+                <X className='text-white stroke-[1.5] w-8 h-8' />
+            </div>
+            
+            <div className=' flex flex-col justify-center items-center '>
+            
                 <div className='rounded-full overflow-hidden w-[150px] h-[150px] ring-2 ring-white'>
                     <Image
                         src="/images/expert.png"
@@ -68,6 +85,7 @@ const Contact = () => {
                         ))
                     }
                 </div>
+            </div>
             </div>
         </div>
     )

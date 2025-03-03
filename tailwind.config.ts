@@ -16,8 +16,11 @@ export default {
   			},
   			secondary: {
   				DEFAULT: 'rgb(163,207,238)',
-  				text: 'rgb(37,53,152)'
+  				text: 'rgb(37,53,152)',
+				light: 'rgb(236,243,248)',
+				text2: 'rgb(152,179,253)'
   			},
+
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			popover: {

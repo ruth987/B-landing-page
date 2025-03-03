@@ -1,3 +1,4 @@
+'use client'    
 import React from 'react';
 import Button from './Button';
 import Image from 'next/image';
@@ -16,7 +17,9 @@ const NavBar: React.FC = () => {
                 />
             </div>
             <div className="flex gap-4">
-                <Button label="ÜBER UNS" variant="secondary" />
+                <Button 
+                onClick={() => router.push('/about-us')}
+                label="ÜBER UNS" variant="secondary" />
                 <Button label="UNSERE LEISTUNGEN" variant="secondary" />
                 <Button onClick={() => router.push('/contact')} label="KONTAKT" variant="primary" />
             </div>
