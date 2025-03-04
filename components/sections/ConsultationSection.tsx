@@ -35,7 +35,7 @@ const ConsultationSection = () => {
             werterhaltend und ohne Aufwand für Sie zu regeln.
           </p>
 
-          <div onClick={() => router.push('/contact')} className="px-8 py-2 bg-primary text-secondary rounded-full w-fit">
+          <div onClick={() => router.push('/contact')} className="px-8 py-2 bg-primary text-secondary rounded-full w-fit hover:cursor-pointer">
             KONTAKT
           </div>
         </div>
