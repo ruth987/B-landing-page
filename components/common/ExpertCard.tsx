@@ -39,7 +39,7 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
               onClick={() => setIsExpanded(!isExpanded)}
               className="text-primary md:text-sm text-xs hover:underline font-semibold"
             >
-              {isExpanded ? 'Show less' : '... Read more'}
+              {isExpanded ? 'Show less' : '... Mehr'}
             </button>
           )}
         </div>
