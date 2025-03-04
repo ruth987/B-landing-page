@@ -1,9 +1,7 @@
 "use client"
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 
 const AssetsSection = () => {
-  const router = useRouter();
   return (
     <section className="container">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
