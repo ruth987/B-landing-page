@@ -58,7 +58,7 @@ const Contact = () => {
                         />
                     </div>
                     <CalendlyEmbed 
-                        url="https://calendly.com/hallo-studioanton/neues-meeting?primary_color=5a61ed"
+                        url="https://calendly.com/buehne-fawier-info"
                         title="Book Your Session"
     
                     />
