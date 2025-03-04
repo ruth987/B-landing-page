@@ -31,17 +31,17 @@ const OurProcessSection = () => {
   ];
 
   return (
-    <section className="bg-primary text-white pt-16 pb-24 px-8">
-      <div className=" max-w-xl flex flex-col justify-between items-start ml-44 mb-12">
-        <p className="text-sm">Effiziente Nachlasslösung für Erben & Eigentümer</p>
-        <h2 className="text-4xl font-bold mt-2">Unser strukturierter <br /> Prozess für maximale <br /> Werte</h2>
-        <p className="mt-4 text-gray-300 text-sm">
-        Unser bewährter Prozess stellt sicher, dass Ihr Nachlass professionell bewertet, optimal 
-        <br /> verwertet und reibungslos abgewickelt wird. Ob Direktankauf oder individuelle Vermarktung – 
-        <br /> wir finden die beste Lösung für Sie.
+    <section className="bg-primary text-white md:pt-16 pt-10 md:pb-24 pb-16 px-4 md:px-8">
+      <div className="max-w-xl flex flex-col justify-between items-start md:ml-44 ml-4 md:mb-12 mb-8">
+        <p className="md:text-sm text-xs">Effiziente Nachlasslösung für Erben & Eigentümer</p>
+        <h2 className="md:text-4xl text-2xl font-bold mt-2">Unser strukturierter <br className="md:block hidden" /> Prozess für maximale <br className="md:block hidden" /> Werte</h2>
+        <p className="mt-4 text-gray-300 md:text-sm text-xs">
+          Unser bewährter Prozess stellt sicher, dass Ihr Nachlass professionell bewertet, optimal 
+          <br className="md:block hidden" /> verwertet und reibungslos abgewickelt wird. Ob Direktankauf oder individuelle Vermarktung – 
+          <br className="md:block hidden" /> wir finden die beste Lösung für Sie.
         </p>
       </div>
-      <div className='flex gap-10 justify-center'>
+      <div className='flex md:flex-row flex-col gap-6 md:gap-10 justify-center items-center'>
         {steps.map((step) => (
           <ProcessCard key={step.number} step={parseInt(step.number)} title={step.title} description={step.description} />
         ))}

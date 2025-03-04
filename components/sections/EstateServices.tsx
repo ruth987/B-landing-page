@@ -19,7 +19,7 @@ const EstateServices = () => {
 
   return (
     <section className="pt-16 pb-24 px-6 bg-white">
-      <div className=" w-fullmx-auto flex justify-around">
+      <div className=" w-full mx-auto flex flex-col md:flex-row justify-around md:gap-0 gap-4">
         {services.map((service, index) => (
           <EstateServiceCard key={index} image={service.image} title={service.title} description={service.description} />
         ))}

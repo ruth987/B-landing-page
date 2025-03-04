@@ -5,7 +5,11 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
-const NavBar: React.FC = () => {
+interface NavBarProps {
+    white?: boolean;
+}
+
+const NavBar: React.FC<NavBarProps> = ({white = true}) => {
     const router = useRouter();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,14 +20,24 @@ const NavBar: React.FC = () => {
     return (
         <nav className="relative bg-transparent text-white">
             <div className="flex justify-between items-center px-4 md:px-20">
-                <div className="">
-                    <Image
-                        src="/images/l-logo.svg"
-                        alt="Logo"
-                        width={150}
-                        height={150}
-                        className="w-32 md:w-48"
-                    />
+                <div className="cursor-pointer" onClick={() => router.push('/')}>
+                    {white ? (
+                        <Image
+                            src="/images/l-logo.svg"
+                            alt="Logo"
+                            width={150}
+                            height={150}
+                            className="w-32 md:w-48"
+                        />
+                    ) : (
+                        <Image
+                            src="/images/l-logo.svg"
+                            alt="Logo"
+                            width={150}
+                            height={150}
+                            className="w-32 md:w-48 bg-primary/100"
+                        />
+                    )}
                 </div>
 
                 {/* Mobile menu button */}

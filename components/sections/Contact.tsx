@@ -4,100 +4,135 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Phone, Mail, Calendar, Home, X } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import CalendlyEmbed from '../common/CalendlyEmbed'
 
 const contactInformations = [
     {
         icon: <Phone />,
-        text: '069 456 7890'
+        text: '+49 (0)152 56821468',
+        action: 'tel:+4915256821468'
     },
     {
         icon: <Mail />,
-        text: 'beratung@buehne-fawier.de'
+        text: 'info@buehne-fawier.de',
+        action: 'mailto:info@buehne-fawier.de'
     },
     {
         icon: <Calendar />,
-        text: 'Wunschtermin direkt eintragen'
+        text: 'Wunschtermin direkt eintragen',
+        action: 'calendar'
     },
     {
         icon: <Home />,
-        text: 'Bühne & Fawier \nNachlassberatung \nXXXXXX'
+        text: 'Bühne & Fawier \nNachlassberatung \nDamte Str 36\n51674 Wiehl\nDeutschland'
     }
 ]
+
 const Contact = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [showCalendly, setShowCalendly] = useState(false)
     const router = useRouter()
+
     const handleClose = () => {
-        router.push('/')
-        setIsOpen(false)
+        router.back()
+        setShowCalendly(false)
     }
+
+    const handleClick = (action?: string) => {
+        if (!action) return
+        
+        if (action === 'calendar') {
+            setShowCalendly(true)
+        } else {
+            window.location.href = action
+        }
+    }
+
     return (
         <div className='flex justify-between items-center w-full h-screen'>
-
-            <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
-                <Image
-                    src="/images/l-logo-2.svg"
-                    alt="logo"
-                    width={300}
-                    height={300}
-                />
-
-            </div>
-            <div className='md:w-1/2 w-full bg-secondary h-full '>
-            <div 
-            onClick={handleClose}
-            className='flex md:justify-end justify-between w-full md:p-4 p-8 cursor-pointer'>
-                <div className='md:hidden'>
-                <Image
-                    src="/images/l-logo-2.svg"
-                    alt="logo"
-                    width={30}
-                    height={30}
-                /></div>
-                
-                <X className='text-white stroke-[1.5] w-8 h-8' />
-            </div>
-            
-            <div className=' flex flex-col justify-center items-center '>
-            
-                <div className='rounded-full overflow-hidden md:w-[150px] w-[100px] md:h-[150px] h-[100px] ring-2 ring-white'>
-                    <Image
-                        src="/images/expert.png"
-                        alt="person profile"
-                        width={200}
-                        height={200}
-                        className='w-full h-full object-cover'
+            {showCalendly ? (
+                <div className='w-full h-full bg-primary'>
+                    <div className='flex justify-end p-4'>
+                        <X 
+                            className='text-white stroke-[1.5] w-8 h-8 cursor-pointer' 
+                            onClick={handleClose}
+                        />
+                    </div>
+                    <CalendlyEmbed 
+                        url="https://calendly.com/hallo-studioanton/neues-meeting?primary_color=5a61ed"
+                        title="Book Your Session"
+    
                     />
                 </div>
-
-                <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 py-5 '>
-                    Wir freuen uns
-                    <br />
-                    auf Ihre Nachricht.
-                </p>
-                <div className='flex flex-col items-center ml-10 md:ml-20'>
-                    {
-                        contactInformations.map((info, index) => (
-                            <div key={index} className='flex items-center gap-4 md:py-3 py-2 w-full' >
-                                <div className='text-white rounded-full border border-primary p-4 md:text-3xl text-xl font-semibold'>
-                                    {info.icon}
-                                </div>
-                                <div className='text-primary md:text-base text-xs items-start'>
-                                    {info.text.split("\n").map((line, i) => (
-                                        <React.Fragment key={i}>
-                                            {line}
-                                            <br />
-                                        </React.Fragment>
-                                    ))}
-                                </div>
+            ) : (
+                <>
+                    <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
+                        <Image
+                            src="/images/l-logo-2.svg"
+                            alt="logo"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
+                    
+                    <div className='md:w-1/2 w-full bg-secondary h-full'>
+                        <div 
+                            onClick={handleClose}
+                            className='flex md:justify-end justify-between w-full md:p-4 p-8 cursor-pointer'>
+                            <div className='md:hidden'>
+                                <Image
+                                    src="/images/l-logo-2.svg"
+                                    alt="logo"
+                                    width={30}
+                                    height={30}
+                                />
                             </div>
-                        ))
-                    }
-                </div>
-            </div>
-            </div>
+                            <X className='text-white stroke-[1.5] w-8 h-8' />
+                        </div>
+
+                        <div className='flex flex-col justify-center items-center'>
+                            <div className='rounded-full overflow-hidden md:w-[150px] w-[100px] md:h-[150px] h-[100px] ring-2 ring-white'>
+                                <Image
+                                    src="/images/expert.png"
+                                    alt="person profile"
+                                    width={200}
+                                    height={200}
+                                    className='w-full h-full object-cover'
+                                />
+                            </div>
+
+                            <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 py-5'>
+                                Wir freuen uns
+                                <br />
+                                auf Ihre Nachricht.
+                            </p>
+                            
+                            <div className='flex flex-col items-center ml-10 md:ml-20'>
+                                {contactInformations.map((info, index) => (
+                                    <div 
+                                        key={index} 
+                                        className='flex items-center gap-4 md:py-3 py-2 w-full cursor-pointer hover:opacity-80 transition-opacity'
+                                        onClick={() => handleClick(info.action)}
+                                    >
+                                        <div className='text-white rounded-full border border-primary p-4 md:text-3xl text-xl font-semibold'>
+                                            {info.icon}
+                                        </div>
+                                        <div className='text-primary md:text-base text-xs items-start'>
+                                            {info.text.split("\n").map((line, i) => (
+                                                <React.Fragment key={i}>
+                                                    {line}
+                                                    <br />
+                                                </React.Fragment>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
         </div>
     )
 }
 
 export default Contact
-

@@ -2,7 +2,7 @@ import React from 'react'
 
 const EstateServiceCard = ({image, title, description}: {image: string, title: string, description: string}) => {
   return (
-    <div className="flex flex-col items-center text-center w-1/4">
+    <div className="flex flex-col items-center text-center w-full md:w-1/4">
             <img
               src={image}
               alt={title}
