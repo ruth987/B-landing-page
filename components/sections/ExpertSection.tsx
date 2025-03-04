@@ -7,18 +7,21 @@ const experts = [
     specialization: 'Schwerpunkte Contemporary Arts & Design',
     description: 'Nach meinem BWL-Studium mit Schwerpunkt Steuern und Corporate Finance und langjähriger Tätigkeit als Serial Entrepreneur habe ich über die Jahre eine große Leidenschaft für Zeitgenößischer Kunst, Design und Antiquitäten entwickelt.\n\nMit über 20 Jahren Erfahrung im Kunst- und Antiquitätenhandel bin ich Ihr vertrauensvoller und kompetenter Ansprechpartner für exklusive Nachlassauflösungen.\n\nMeine fundierten Kenntnisse im Bereich der Nachlassbewertung ermöglichen es mir, individuelle und maßgeschneiderte Lösungen für komplexe Nachlässe zu entwickeln.\n\nIch bin spezialisiert auf die Bewertung und den Ankauf von Zeitgenößischer Kunst, Design und Antiquitäten.',
     imageUrl: '/images/expert.png',
+    action: 'mailto:lb@buehne-fawier.com',
   },
   {
     name: 'Erik Bühne',
     specialization: 'Schwerpunkte Collectibles & Asiatika',
     description: 'Mein Name ist Erik und ich bringe über 20 Jahre Erfahrung im internationalen Sales, Hotellerie und der Beratung mit.\n\nHierbei ist mein Interesse an schönen Raritäten, wertvollen Collectibales etc entstanden.\n\nIch bin bei uns im Team spezialisiert auf die Nachlassverwertung und den Ankauf von Uhren, Schmuck, Sports Memorabilia, Collectibales und Asiatika.\n\nMit meinem langjährigen Erfahrung und einem internationalen Netzwerk bewerte ich Ihre Schätze fair und zuverlässig.\n\nVertrauen, Transparenz und Diskretion stehen dabei für uns an erster Stelle.',
     imageUrl: '/images/expert.png',
+    action: 'mailto:eb@buehne-fawier.com',
   },
   {
     name: 'Lars Bühne',
     specialization: 'Schwerpunkte Immobilien, Fahrzeuge',
     description: 'Nach beruflichen Stationen in Reykjavik (Island) und Köln lebe ich seit über 15 Jahren in der pulsierenden Main-Metropole Frankfurt am Main.\n\nAls selbstständiger Architekt mit Schwerpunkt auf Entwurf & Design habe ich eine große Leidenschaft für Häuser, Inneneinrichtungen, Kunst und Luxusgüter entwickelt.\n\nMit über 25 Jahren Erfahrung bin ich Ihr vertrauensvoller und kompetenter Ansprechpartner für exklusive Sammlerstücke, hochwertige Immobilien und dem Ankauf von Oldtimern und Luxusfahrzeugen.\n\nDurch meine Zulassung nach §34c GewO bin ich berechtigt, Wohneigentum professionell für sie zu vermarkten.',
     imageUrl: '/images/expert.png',
+    action: 'mailto:sf@buehne-fawier.com',
   },
 ];
 
