@@ -24,16 +24,16 @@ const experts = [
 
 const ExpertSection: React.FC = () => {
   return (
-    <section className="bg-primary text-white py-16 px-8">
-      <div className=" max-w-xl flex flex-col justify-between items-start ml-44 mb-12">
-        <p className="text-sm">Verlässliche Partner an Ihrer Seite</p>
-        <h2 className="text-4xl font-bold mt-2">Wir sind leidenschaftliche Spezialisten aus verschiedenen Bereichen und Märkten</h2>
-        <p className="mt-4 text-gray-300">
+    <section className="bg-primary text-white md:py-16 py-8 px-4 md:px-8">
+      <div className="md:max-w-xl flex flex-col justify-between items-start md:ml-44 mb-8 md:mb-12">
+        <p className="text-[10px] md:text-sm">Verlässliche Partner an Ihrer Seite</p>
+        <h2 className="text-xl md:text-4xl font-bold mt-2">Wir sind leidenschaftliche Spezialisten aus verschiedenen Bereichen und Märkten</h2>
+        <p className="mt-4 text-gray-300 text-sm md:text-base">
         Seit 2025 begleiten wir Erben und Eigentümer bei der professionellen Verwertung von Nachlässen, Wertgegenständen und Immobilien – transparent, diskret und zuverlässig.
         Ob Erbfall, Umzug oder Haushaltsauflösung: Wir bieten kostenlose Beratung, fundierte Bewertungen und individuelle Verkaufsstrategien – vom direkten Ankauf bis zur diskreten Vermarktung.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-col md:flex-row flex-wrap justify-center gap-4 md:gap-8">
         {experts.map((expert, index) => (
           <ExpertCard key={index} {...expert} />
         ))}

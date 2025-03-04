@@ -10,7 +10,7 @@ import { Check } from 'lucide-react';
 
 const Faqs = () => {
   return (
-    <div className='flex md:flex-row flex-col items-start justify-center gap-5 md:gap-20 md:py-20 py-0 px-4 md:mt-0 mt-32'>
+    <div className='flex md:flex-row flex-col items-start justify-center gap-5 md:gap-20 md:py-20 py-0 px-4 md:mt-2 mt-6 '>
         <div className='flex flex-col gap-2 md:pt-10 pt-4'>
             <p className='md:text-xs text-[10px]'>FAQS</p>
             <p className='md:text-4xl text-2xl font-semibold'>Häufig gestellte Fragen</p>
