@@ -33,7 +33,7 @@ const Contact = () => {
     return (
         <div className='flex justify-between items-center w-full h-screen'>
 
-            <div className='bg-primary p-10 w-1/2 h-full flex justify-center items-center'>
+            <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
                 <Image
                     src="/images/l-logo-2.svg"
                     alt="logo"
@@ -42,16 +42,24 @@ const Contact = () => {
                 />
 
             </div>
-            <div className='w-1/2 bg-secondary h-full '>
+            <div className='md:w-1/2 w-full bg-secondary h-full '>
             <div 
             onClick={handleClose}
-            className='flex justify-end w-full p-4 cursor-pointer'>
+            className='flex md:justify-end justify-between w-full md:p-4 p-8 cursor-pointer'>
+                <div className='md:hidden'>
+                <Image
+                    src="/images/l-logo-2.svg"
+                    alt="logo"
+                    width={30}
+                    height={30}
+                /></div>
+                
                 <X className='text-white stroke-[1.5] w-8 h-8' />
             </div>
             
             <div className=' flex flex-col justify-center items-center '>
             
-                <div className='rounded-full overflow-hidden w-[150px] h-[150px] ring-2 ring-white'>
+                <div className='rounded-full overflow-hidden md:w-[150px] w-[100px] md:h-[150px] h-[100px] ring-2 ring-white'>
                     <Image
                         src="/images/expert.png"
                         alt="person profile"
@@ -61,19 +69,19 @@ const Contact = () => {
                     />
                 </div>
 
-                <p className='text-primary text-4xl font-semibold text-center w-1/2 py-5 '>
+                <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 py-5 '>
                     Wir freuen uns
                     <br />
                     auf Ihre Nachricht.
                 </p>
-                <div className='flex flex-col items-center ml-20'>
+                <div className='flex flex-col items-center ml-10 md:ml-20'>
                     {
                         contactInformations.map((info, index) => (
-                            <div key={index} className='flex items-center gap-4 py-3 w-full' >
-                                <div className='text-white rounded-full border border-primary p-4 text-3xl font-semibold'>
+                            <div key={index} className='flex items-center gap-4 md:py-3 py-2 w-full' >
+                                <div className='text-white rounded-full border border-primary p-4 md:text-3xl text-xl font-semibold'>
                                     {info.icon}
                                 </div>
-                                <div className='text-primary items-start'>
+                                <div className='text-primary md:text-base text-xs items-start'>
                                     {info.text.split("\n").map((line, i) => (
                                         <React.Fragment key={i}>
                                             {line}

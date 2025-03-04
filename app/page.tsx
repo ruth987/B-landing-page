@@ -15,7 +15,7 @@ import ConsultationSection from "@/components/sections/ConsultationSection";
 export default function Home() {
 
   return (
-    <div >
+    <div className="">
       <Contact />
       <HeroSection />
       <Section2 />

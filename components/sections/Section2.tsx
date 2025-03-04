@@ -3,14 +3,14 @@ import React from "react";
 
 const Section2 = () => {
     return (
-        <section className="w-full bg-primary py-20 flex justify-between items-center pl-40 text-white">
+        <section className="w-full bg-primary py-20 flex md:flex-row flex-col justify-between items-center md:pl-40 px-6 text-white">
             {/* Left Content */}
-            <div className="w-1/2">
-                <p className="text-gray-300 text-sm">
+            <div className="md:w-1/2 w-full">
+                <p className="text-gray-300 md:text-sm text-xs">
                     Für alle, die eine reibungslose und professionelle Abwicklung schätzen
                 </p>
 
-                <h1 className="text-3xl font-semibold leading-tight mt-3">
+                <h1 className="md:text-4xl text-2xl font-semibold leading-tight mt-3">
                     Ihre individuelle Beratung
                     <br />
                     für die bestmögliche
@@ -25,42 +25,42 @@ const Section2 = () => {
                         alt="Expert 1"
                         width={50}
                         height={50}
-                        className="rounded-full w-16 h-16 object-cover border-2 border-white relative z-10"
+                        className="rounded-full md:w-16 md:h-16 w-12 h-12 object-cover border-2 border-white relative z-10"
                     />
                     <Image
                         src="/images/expert.png"
                         alt="Expert 2"
                         width={50}
                         height={50}
-                        className="rounded-full w-16 h-16 object-cover border-2 border-white absolute left-10 z-20"
+                        className="rounded-full md:w-16 md:h-16 w-12 h-12 object-cover border-2 border-white absolute md:left-10 left-8 z-20"
                     />
                     <Image
                         src="/images/expert.png"
                         alt="Expert 3"
                         width={50}
                         height={50}
-                        className="rounded-full w-16 h-16 object-cover border-2 border-white absolute left-20 z-30"
+                        className="rounded-full md:w-16 md:h-16 w-12 h-12 object-cover border-2 border-white absolute md:left-20 left-16 z-30"
                     />
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-300 text-sm mt-2 leading-relaxed">
+                <p className="text-gray-300 md:text-sm text-xs mt-2 leading-relaxed">
                     Ohne Erfahrung und Marktkenntnis kann die Nachlassabwicklung schnell komplex und 
-                    <br />
                     zeitaufwendig werden – mit dem Risiko, Vermögenswerte unter Wert zu veräußern. 
-                    Wir bieten <br /> eine maßgeschneiderte, effiziente Beratung, gestützt auf ein europaweites 
-                    Expertennetzwerk <br /> und eine klare Strategie, die eine reibungslose, werterhaltende 
+                    Wir bieten eine maßgeschneiderte, effiziente Beratung, gestützt auf ein europaweites 
+                    Expertennetzwerk und eine klare Strategie, die eine reibungslose, werterhaltende 
                     Abwicklung sicherstellt.
                 </p>
             </div>
 
             {/* Right Content (Logo) */}
-            <div className="w-1/2 flex justify-center">
+            <div className="hidden md:w-1/2 w-full md:flex justify-center mt-10 md:mt-0">
                 <Image
                     src="/images/l-logo-2.svg"
                     alt="Bühne & Fawier Logo"
                     width={200}
                     height={200}
+                    className="md:w-[200px] w-[150px]"
                 />
             </div>
         </section>

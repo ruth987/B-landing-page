@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className='flex justify-between px-28 bg-primary text-white py-10'>
+    <div className='flex justify-between md:px-28 px-4 bg-primary text-white md:py-10 py-6'>
         <div className='flex gap-2'>
             <div>
                 <Image
@@ -11,10 +11,10 @@ const Footer = () => {
                  alt="logo"
                  width={100}
                  height={100}
-                 className=''
+                 className='md:w-[100px] w-[40px]'
                  />
             </div>
-            <div className='text-secondary text-lg font-semibold'>
+            <div className='text-secondary md:text-lg text-xs font-semibold'>
             Nachlass
             <br />
             optimal
@@ -22,15 +22,15 @@ const Footer = () => {
             verwerten.
             </div>
         </div>
-        <div className='flex flex-col gap-10'>
-            <div className=' text-sm '>
+        <div className='flex flex-col md:gap-10 gap-4'>
+            <div className='md:text-sm text-[10px]'>
             Bühne & Fawier
             <br />
             XXXX
             <br />
             XXXX
             </div>
-            <div className='flex gap-5 text-xs'>
+            <div className='flex md:gap-5 gap-2 text-[10px] md:text-xs'>
                 <p>Cookies</p>
                 <p>Impressum</p>
                 <p>Datenschutz</p>

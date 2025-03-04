@@ -6,12 +6,12 @@ const IntroSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 {/* Left Content */}
                 <div className="space-y-2">
-                    <p className="text-gray-600 text-xs">
+                    <p className="text-gray-600 md:text-xs text-[10px]">
                         Für alle, die eine reibungslose und professionelle Abwicklung schätzen
                     </p>
 
                     <div className="space-y-4">
-                        <h1 className="text-4xl font-bold text-navy-900 leading-tight">
+                        <h1 className="md:text-4xl text-2xl font-bold text-primary leading-tight">
                             Bühne & Fawier
                             <br />
                             Ihre Experten für
@@ -20,11 +20,11 @@ const IntroSection = () => {
                         </h1>
                     </div>
 
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 md:text-sm text-xs leading-relaxed">
                         Wir sind spezialisiert auf die Verwertung hochwertiger Nachlässe
-                        und <br />
+                        und <br className='hidden md:block' />
                         bieten exklusive Lösungen für Erben, die sich nicht selbst um
-                        die <br />Abwicklung kümmern möchten.
+                        die <br className='hidden md:block' />Abwicklung kümmern möchten.
                     </p>
 
                     
@@ -35,8 +35,8 @@ const IntroSection = () => {
                     {/* image or some content */}
                 </div>
             </div>
-            <div className="pt-16">
-                        <p className="flex items-center gap-2">
+            <div className="md:pt-16 pt-8">
+                        <p className="flex items-center gap-2 md:text-base text-sm">
                             <span className="font-semibold">Standorte:</span>
                             <span className="text-gray-600">Wiehl, Köln & Frankfurt am Main</span>
                         </p>
