@@ -100,7 +100,7 @@ const Contact = () => {
                                 />
                             </div>
 
-                            <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 py-5'>
+                            <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 pb-3'>
                                 Wir freuen uns
                                 <br />
                                 auf Ihre Nachricht.
