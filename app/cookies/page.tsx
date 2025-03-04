@@ -3,6 +3,7 @@ import React from 'react'
 import TopContact from '@/components/common/TopContact'
 import Footer from '@/components/common/Footer'
 import NavBar from '@/components/common/NavBar'
+import TextBox from '@/components/common/TextBox'
 
 const PrivacyPolicy = () => {
   return (
@@ -92,6 +93,7 @@ const PrivacyPolicy = () => {
         </section>
       </div>
       <div className='sticky bottom-0'>
+      <TextBox text="Nutzen Sie unsere kostenlose Erstberatung unter 069 456 7890" />
         <Footer />
       </div>
     </div>
