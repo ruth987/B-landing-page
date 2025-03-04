@@ -1,0 +1,17 @@
+import React from 'react'
+
+const EstateServiceCard = ({image, title, description}: {image: string, title: string, description: string}) => {
+  return (
+    <div className="flex flex-col items-center text-center w-1/4">
+            <img
+              src={image}
+              alt={title}
+              className="w-full max-w-md shadow-lg"
+            />
+            <h3 className="text-left text-2xl font-bold text-gray-900 mt-6">{title}</h3>
+            <p className="text-left text-sm text-gray-600 mt-4">{description}</p>
+          </div>
+  )
+}
+
+export default EstateServiceCard

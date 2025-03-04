@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
                 <Button 
                 onClick={() => router.push('/about-us')}
                 label="ÜBER UNS" variant="secondary" />
-                <Button label="UNSERE LEISTUNGEN" variant="secondary" />
+                <Button onClick={() => router.push('/services')} label="UNSERE LEISTUNGEN" variant="secondary" />
                 <Button onClick={() => router.push('/contact')} label="KONTAKT" variant="primary" />
             </div>
         </nav>

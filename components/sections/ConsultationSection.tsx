@@ -8,7 +8,7 @@ const ConsultationSection = () => {
     <section className="container h-[80vh]">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center h-full">
         {/* Left side - Image */}
-        <div className="relative w-full h-[610px]">
+        <div className="relative w-full h-[603px]">
           <Image
             src="/images/consult-pic.png" 
             alt="Modern luxury house at dusk"
