@@ -18,10 +18,10 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
     };
 
     return (
-        <nav className="relative bg-transparent text-white">
+        <nav className={`relative ${white ? 'bg-transparent' : 'bg-primary'} text-white`}>
             <div className="flex justify-between items-center px-4 md:px-20">
                 <div className="cursor-pointer" onClick={() => router.push('/')}>
-                    {white ? (
+                
                         <Image
                             src="/images/l-logo.svg"
                             alt="Logo"
@@ -29,15 +29,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                             height={150}
                             className="w-32 md:w-48"
                         />
-                    ) : (
-                        <Image
-                            src="/images/l-logo.svg"
-                            alt="Logo"
-                            width={150}
-                            height={150}
-                            className="w-32 md:w-48 bg-primary/100"
-                        />
-                    )}
+            
                 </div>
 
                 {/* Mobile menu button */}
