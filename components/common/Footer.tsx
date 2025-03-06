@@ -7,7 +7,7 @@ const Footer = () => {
     const router = useRouter();
   return (
     <div className='flex justify-between md:px-28 px-4 bg-primary text-white md:py-10 py-6'>
-        <div className='flex gap-2'>
+        <div className='flex gap-2 cursor-pointer'  onClick={() => router.push('/')}>
             <div className="cursor-pointer" onClick={() => router.push('/')}>
                 <Image
                  src="/images/White_vert_logo.svg"

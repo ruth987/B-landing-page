@@ -1,8 +1,10 @@
 import React from 'react';
 import NavBar from '../common/NavBar';
 import { Button } from '../ui/button';
+import { useRouter } from 'next/navigation';
 
 const HeroSection: React.FC = () => {
+  const router = useRouter();
   return (
     <section
       className="relative h-screen flex items-start md:pt-44 pt-20 justify-start md:pl-40 px-6 text-white bg-cover bg-center"
@@ -23,7 +25,9 @@ const HeroSection: React.FC = () => {
         <br />
         Sie möchten eine reibungslose, diskrete und professionelle Abwicklung?
         </p>
-        <Button className='bg-white rounded-full text-black hover:text-white hover:bg-primary transition-all duration-300 mt-6 px-10 py-4'>Kostenlose Erstberatung</Button>
+        <Button className='bg-white rounded-full text-black hover:text-white hover:bg-primary transition-all duration-300 mt-6 px-10 py-4'
+        onClick={() => router.push('/contact')}
+        >Kostenlose Erstberatung</Button>
       </div>
       <div className='absolute md:bottom-20 bottom-10 left-0 right-0 md:px-44 px-12'>
         <div className='grid grid-cols-2 md:grid-cols-4 items-center justify-between w-full gap-6 md:gap-0'>

@@ -58,8 +58,10 @@ const Contact = () => {
                         />
                     </div>
                     <CalendlyEmbed 
+
                         url="https://calendly.com/buehne-fawier-info/30min"
                         title="Zeitplan Zeitfenster"
+
                     />
                 </div>
             ) : (
