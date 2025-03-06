@@ -46,9 +46,11 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
         </div>
         
         <div className='flex justify-center mt-4'>
-          <Button className="w-4/5 bg-primary hover:bg-primary-text rounded-full text-secondary text-[10px] md:text-xs"
-            onClick={() => window.location.href = action}
-          >
+
+          <Button 
+          onClick={() => window.open('mailto:info@nachlass-verwerten.de')}
+          className="w-4/5 bg-primary rounded-full text-secondary text-[10px] md:text-xs hover:border-white hover:border hover:bg-secondary hover:text-primary">
+
             DIREKT KONTAKTIEREN
           </Button>
         </div>

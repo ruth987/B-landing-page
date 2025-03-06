@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
       className="relative h-screen flex items-start md:pt-44 pt-20 justify-start md:pl-40 px-6 text-white bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      style={{ backgroundImage: "url('/images/hero-section.jpg')" }}
     >
         <div className="absolute top-0 left-0 w-full z-20">
             <NavBar />

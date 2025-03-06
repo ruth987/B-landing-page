@@ -10,7 +10,7 @@ const ConsultationSection = () => {
         {/* Left side - Image */}
         <div className="relative w-full aspect-[4/3]">
           <Image
-            src="/images/consult-pic.png" 
+            src="/images/section-6.jpg" 
             alt="Modern luxury house at dusk"
             fill
             className="object-cover"

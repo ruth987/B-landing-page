@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 interface NavBarProps {
@@ -11,6 +11,7 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({white = true}) => {
     const router = useRouter();
+    const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -18,17 +19,29 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
     };
 
     return (
-        <nav className={`relative ${white ? 'bg-transparent' : 'bg-primary'} text-white`}>
+        <nav className={`relative bg-transparent text-white`}>
             <div className="flex justify-between items-center px-4 md:px-20">
                 <div className="cursor-pointer" onClick={() => router.push('/')}>
-                
+                {
+                    white ? (
                         <Image
-                            src="/images/l-logo.svg"
-                            alt="Logo"
-                            width={150}
-                            height={150}
-                            className="w-32 md:w-48"
+                        src="/images/White_hori_logo.svg"
+                        alt="Logo"
+                        width={150}
+                        height={100}
+                        className="w-32 md:w-48 h-48 -top-16 md:-top-12 absolute"
                         />
+                    ) : (
+                        <Image
+                        src="/images/Blue_hori_logo.svg"
+                        alt="Logo"
+                        width={150}
+                        height={100}
+                        className="w-32 md:w-48 h-48 -top-16 md:-top-12 absolute"
+                        />
+                    )
+                }
+                       
             
                 </div>
 
@@ -41,21 +54,21 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                 </button>
 
                 {/* Desktop menu */}
-                <div className="hidden md:flex gap-4">
+                <div className="hidden md:flex gap-4 pt-4">
                     <Button 
                         onClick={() => router.push('/about-us')}
                         label="ÜBER UNS" 
-                        variant="secondary" 
+                        variant={pathname === '/about-us' ? 'primary' : 'secondary'}
                     />
                     <Button 
                         onClick={() => router.push('/services')} 
                         label="UNSERE LEISTUNGEN" 
-                        variant="secondary" 
+                        variant={pathname === '/services' ? 'primary' : 'secondary'}
                     />
                     <Button 
                         onClick={() => router.push('/contact')} 
                         label="KONTAKT" 
-                        variant="primary" 
+                        variant={pathname === '/contact' ? 'primary' : 'secondary'}
                     />
                 </div>
             </div>
@@ -68,7 +81,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="ÜBER UNS" 
-                    variant="secondary" 
+                    variant={pathname === '/about-us' ? 'primary' : 'secondary'}
                 />
                 <Button 
                     onClick={() => {
@@ -76,7 +89,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="UNSERE LEISTUNGEN" 
-                    variant="secondary" 
+                    variant={pathname === '/services' ? 'primary' : 'secondary'}
                 />
                 <Button 
                     onClick={() => {
@@ -84,7 +97,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="KONTAKT" 
-                    variant="primary" 
+                    variant={pathname === '/contact' ? 'primary' : 'secondary'}
                 />
             </div>
         </nav>
