@@ -10,14 +10,14 @@ const Footer = () => {
         <div className='flex gap-2'>
             <div className="cursor-pointer" onClick={() => router.push('/')}>
                 <Image
-                 src="/images/l-logo-2.svg"
+                 src="/images/White_vert_logo.svg"
                  alt="logo"
-                 width={100}
-                 height={100}
-                 className='md:w-[100px] w-[40px]'
+                 width={110}
+                 height={110}
+                 className='md:w-[150px] w-[70px] h-full'
                  />
             </div>
-            <div className='text-secondary md:text-lg text-xs font-semibold'>
+            <div className='text-secondary md:text-lg text-[10px] font-semibold flex items-center'>
             Nachlass
             <br />
             optimal
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex flex-col md:gap-10 gap-4'>
-            <div className='md:text-sm text -[10px]'>
+            <div className='md:text-sm text-[10px]'>
             Bühne & Fawier
             <br />
             XXXX

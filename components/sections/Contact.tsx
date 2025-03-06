@@ -58,19 +58,18 @@ const Contact = () => {
                         />
                     </div>
                     <CalendlyEmbed 
-                        url="https://calendly.com/hallo-studioanton/neues-meeting?primary_color=5a61ed"
-                        title="Book Your Session"
-
+                        url="https://calendly.com/buehne-fawier-info/30min"
+                        title="Zeitplan Zeitfenster"
                     />
                 </div>
             ) : (
                 <>
                     <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
                         <Image
-                            src="/images/l-logo-2.svg"
+                            src="/images/White_vert_logo.svg"
                             alt="logo"
-                            width={300}
-                            height={300}
+                            width={420}
+                            height={420}
                         />
                     </div>
                     
@@ -100,7 +99,7 @@ const Contact = () => {
                                 />
                             </div>
 
-                            <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 py-5'>
+                            <p className='text-primary md:text-4xl text-xl font-semibold text-center w-1/2 pb-3'>
                                 Wir freuen uns
                                 <br />
                                 auf Ihre Nachricht.

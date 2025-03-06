@@ -39,13 +39,15 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
               onClick={() => setIsExpanded(!isExpanded)}
               className="text-primary md:text-sm text-xs hover:underline font-semibold"
             >
-              {isExpanded ? 'Show less' : '... Read more'}
+              {isExpanded ? 'Weniger Anzeigen' : '... Mehr'}
             </button>
           )}
         </div>
         
         <div className='flex justify-center mt-4'>
-          <Button className="w-4/5 bg-primary hover:bg-primary-text rounded-full text-secondary text-[10px] md:text-xs">
+          <Button 
+          onClick={() => window.open('mailto:info@nachlass-verwerten.de')}
+          className="w-4/5 bg-primary rounded-full text-secondary text-[10px] md:text-xs hover:border-white hover:border hover:bg-secondary hover:text-primary">
             DIREKT KONTAKTIEREN
           </Button>
         </div>

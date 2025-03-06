@@ -13,7 +13,9 @@ const ProcessCard = ({ step, title, description }: { step: number, title: string
 
             {
                 step === 1 && (
-                    <Button className='bg-primary text-secondary mx-auto rounded-full text-xs'>
+                    <Button 
+                    onClick={() => window.open('mailto:info@nachlass-verwerten.de')}
+                    className='bg-primary text-secondary mx-auto rounded-full text-xs hover:bg-secondary hover:text-primary hover:border-white hover:border'>
                         JETZT KONTAKTIEREN
                     </Button>
                 )

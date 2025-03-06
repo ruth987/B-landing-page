@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const IntroSection = () => {
     return (
@@ -32,7 +33,13 @@ const IntroSection = () => {
 
                 {/* Right Side - Image or Content */}
                 <div className="bg-blue-50 rounded-lg h-full min-h-[400px]">
-                    {/* image or some content */}
+                    <Image 
+                    src="/images/section4.jpg" 
+                    alt="Intro Section" 
+                    width={500} 
+                    height={500} 
+                    className="w-full h-full object-cover"
+                    />
                 </div>
             </div>
             <div className="md:pt-16 pt-8">
