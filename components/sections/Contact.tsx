@@ -60,7 +60,7 @@ const Contact = () => {
                     <CalendlyEmbed 
                         url="https://calendly.com/hallo-studioanton/neues-meeting?primary_color=5a61ed"
                         title="Book Your Session"
-    
+
                     />
                 </div>
             ) : (
