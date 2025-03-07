@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import Image from 'next/image';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
 interface NavBarProps {
@@ -11,7 +11,6 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({white = true}) => {
     const router = useRouter();
-    const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -58,17 +57,17 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                     <Button 
                         onClick={() => router.push('/about-us')}
                         label="ÜBER UNS" 
-                        variant={pathname === '/about-us' ? 'primary' : 'secondary'}
+                        variant='secondary'
                     />
                     <Button 
                         onClick={() => router.push('/services')} 
                         label="UNSERE LEISTUNGEN" 
-                        variant={pathname === '/services' ? 'primary' : 'secondary'}
+                        variant='secondary'
                     />
                     <Button 
                         onClick={() => router.push('/contact')} 
                         label="KONTAKT" 
-                        variant={pathname === '/contact' ? 'primary' : 'secondary'}
+                        variant='primary'
                     />
                 </div>
             </div>
@@ -81,7 +80,6 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="ÜBER UNS" 
-                    variant={pathname === '/about-us' ? 'primary' : 'secondary'}
                 />
                 <Button 
                     onClick={() => {
@@ -89,7 +87,6 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="UNSERE LEISTUNGEN" 
-                    variant={pathname === '/services' ? 'primary' : 'secondary'}
                 />
                 <Button 
                     onClick={() => {
@@ -97,7 +94,6 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="KONTAKT" 
-                    variant={pathname === '/contact' ? 'primary' : 'secondary'}
                 />
             </div>
         </nav>
