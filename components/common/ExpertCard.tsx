@@ -8,10 +8,9 @@ type ExpertCardProps = {
   specialization: string;
   description: string;
   imageUrl: string;
-  action:string;
 };
 
-const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, description, imageUrl,action }) => {
+const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, description, imageUrl }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
