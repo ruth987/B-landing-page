@@ -80,6 +80,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="ÜBER UNS" 
+                    variant='secondary'
                 />
                 <Button 
                     onClick={() => {
@@ -87,6 +88,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="UNSERE LEISTUNGEN" 
+                    variant='secondary'
                 />
                 <Button 
                     onClick={() => {
@@ -94,6 +96,7 @@ const NavBar: React.FC<NavBarProps> = ({white = true}) => {
                         setIsMenuOpen(false);
                     }}
                     label="KONTAKT" 
+                    variant='primary'
                 />
             </div>
         </nav>
