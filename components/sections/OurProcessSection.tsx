@@ -5,28 +5,21 @@ const OurProcessSection = () => {
   const steps = [
     {
       number: "1",
-      title: "Kontakt",
+      title: "Bewertung / Begutachtung",
       description:
-        "Sie erreichen uns telefonisch oder per E-Mail für eine kostenlose Erstberatung.",
-      buttonText: "Jetzt kontaktieren",
+        "Gerne erstellen wir Ihnen für Ihren Nachlass / Haushalt eine neutrale Bewertung.",
+      // buttonText: "Jetzt kontaktieren",
     },
     {
       number: "2",
-      title: "Bewertung",
+      title: "Vermarktungs-strategien / Beratung",
       description:
-        "Gerne erstellen wir Ihnen für Ihren Nachlass / Haushalt eine neutrale Bewertung.",
+        "Gerne unterbreiten wir Ihnen  ein seriöses und marktgerechtes Ankaufsangebot oder organisieren und planen gemeinsam mit Ihnen die wertmaximierende Vermarktung Ihrere Vermögensgegenstände.",
     },
     {
       number: "3",
-      title: "Ankauf / Vermarktung",
-      description:
-        "Gerne unterbreiten wir Ihnen ein seriöses und marktgerechtes Ankaufangebot oder organisieren die wertmaximierende Vermarktung Ihrer Vermögensgegenstände.",
-    },
-    {
-      number: "4",
-      title: "Abrechnung",
-      description:
-        "Ankäufe wickeln wir innerhalb von einer Woche ab / Vermarktungsaufträge gestalten wir individuell in Absprache mit Ihnen.",
+      title: "Projektmanagement / Planung / Organisation / Umsetzung",
+      description:"Ankäufe wickeln wir innerhalb von einer Woche ab / Vermarktungsaufträge gestalten wir individuell in Absprache mit Ihnen."    
     },
   ];
 
@@ -41,7 +34,7 @@ const OurProcessSection = () => {
           <br className="md:block hidden" /> wir finden die beste Lösung für Sie.
         </p>
       </div>
-      <div className='flex md:flex-row flex-col gap-6 md:gap-10 justify-center items-center'>
+      <div className='flex md:flex-row flex-col gap-6 md:gap-10 items-center justify-center'>
         {steps.map((step) => (
           <ProcessCard key={step.number} step={parseInt(step.number)} title={step.title} description={step.description} />
         ))}

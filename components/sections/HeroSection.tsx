@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from '../common/NavBar';
-import { Button } from '../ui/button';
 import { useRouter } from 'next/navigation';
 
 const HeroSection: React.FC = () => {
@@ -25,17 +24,15 @@ const HeroSection: React.FC = () => {
         <br />
         Sie möchten eine reibungslose, diskrete und professionelle Abwicklung?
         </p>
-        <Button className='bg-white rounded-full text-black hover:text-white hover:bg-primary transition-all duration-300 mt-6 px-10 py-4'
-        onClick={() => router.push('/contact')}
-        >Kostenlose Erstberatung</Button>
+
       </div>
       <div className='absolute md:bottom-20 bottom-10 left-0 right-0 md:px-44 px-12'>
         <div className='grid grid-cols-2 md:grid-cols-4 items-center justify-between w-full gap-6 md:gap-0'>
-          <div className='flex items-center gap-2'>
+          <div onClick={() => router.push('/services')} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>1</p>
               <p className='md:text-sm text-xs'>Maximale Transparenz</p>
           </div>
-          <div className='flex items-center gap-2'>
+          <div onClick={() => router.push('/services')} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>2</p>
               <p className='md:text-sm text-xs'>
               Individuelle
@@ -43,7 +40,7 @@ const HeroSection: React.FC = () => {
               Vermarktungsstrategie
               </p>
           </div>
-          <div className='flex items-center gap-2'>
+          <div onClick={() => router.push('/services')} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>3</p>
               <p className='md:text-sm text-xs'>
               Diskrete
@@ -51,7 +48,7 @@ const HeroSection: React.FC = () => {
               Abwicklung
               </p>
           </div>
-          <div className='flex items-center gap-2'>
+          <div onClick={() => router.push('/services')} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>4</p>
               <p className='md:text-sm text-xs'>
               Europaweites

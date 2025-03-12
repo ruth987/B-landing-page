@@ -4,15 +4,14 @@ import React from 'react';
 type ButtonProps = {
   label: string;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary';
+  white?: boolean;
 };
 
-const Button: React.FC<ButtonProps> = ({ label, onClick, variant = 'primary' }) => {
+const Button: React.FC<ButtonProps> = ({ label, onClick, white }) => {
   return (
     <button
       onClick={onClick}
-      className={`px-6 py-2 rounded-full font-medium transition-all duration-300 text-xs ${
-        variant === 'primary' ? 'bg-secondary text-black hover:bg-primary hover:text-white hover:border-white hover:border' : 'bg-transparent border border-secondary text-secondary hover:bg-primary hover:text-white hover:border-white hover:border'
+      className={`px-6 py-2 rounded-full font-medium transition-all duration-300 text-xs bg-transparent  hover:bg-primary ${white ? 'text-white' : 'text-primary hover:bg-secondary'} hover:border-white hover:border'
       }`}
     >
       {label}

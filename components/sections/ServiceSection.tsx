@@ -1,6 +1,6 @@
 const ServiceSection = () => {
     return (
-      <section className="bg-primary text-secondary-text2 py-10">
+      <section className="bg-secondary-light text-primary py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center space-y-2">
             <span className="md:text-xs text-[10px]">
