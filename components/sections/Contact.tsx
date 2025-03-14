@@ -72,22 +72,24 @@ const Contact = () => {
                             alt="logo"
                             width={420}
                             height={420}
+                            priority
                         />
                     </div>
                     
                     <div className='md:w-1/2 w-full bg-secondary h-full'>
                         <div 
                             onClick={handleClose}
-                            className='flex md:justify-end justify-between w-full md:p-4 p-8 cursor-pointer'>
+                            className='flex md:justify-end justify-between w-full md:p-4 px-4 cursor-pointer'>
                             <div className='md:hidden'>
                                 <Image
-                                    src="/images/l-logo-2.svg"
+                                    src="/images/Blue_Hori_logo.svg"
                                     alt="logo"
-                                    width={30}
-                                    height={30}
+                                    width={100}
+                                    height={100}
+                                    priority
                                 />
                             </div>
-                            <X className='text-white stroke-[1.5] w-8 h-8' />
+                            <X className='md:text-white stroke-[1.5] w-8 h-8 md:mt-0 mt-8 text-primary ' />
                         </div>
 
                         <div className='flex flex-col justify-center items-center'>
@@ -98,6 +100,7 @@ const Contact = () => {
                                     width={200}
                                     height={200}
                                     className='w-full h-full object-cover'
+                                    priority
                                 />
                             </div>
 

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const CollectionCard = () => {
   return (
-    <div className='bg-secondary text-sm md:text-base  px-4 py-8 md:py-0 text-primary flex flex-col items-center justify-center min-h-[30vh]'>
+    <div className='bg-secondary-light text-sm md:text-base  px-4 py-8 md:py-0 text-primary flex flex-col items-center justify-center min-h-[30vh]'>
       <motion.p 
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

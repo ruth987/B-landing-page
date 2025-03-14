@@ -81,7 +81,7 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
 
             {/* Mobile menu */}
             <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute w-full bg-transparent justify-end md:px-20 px-4 py-4`}>
-                <div className='flex flex-col gap-4 justify-end items-end'>
+                <div className='flex flex-col gap-4 justify-end items-end -space-y-4 md:space-y-0'>
 
                     <Button
                         onClick={() => {

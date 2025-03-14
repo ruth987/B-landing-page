@@ -17,7 +17,7 @@ const Footer = () => {
                  className='md:w-[150px] w-[70px] h-full'
                  />
             </div>
-            <div className='text-secondary md:text-lg text-[10px] font-semibold flex items-center'>
+            <div className='text-secondary-light md:text-lg text-[10px] font-semibold flex items-center'>
             Nachlass
             <br />
             optimal
