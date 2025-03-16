@@ -8,9 +8,10 @@ type ExpertCardProps = {
   specialization: string;
   description: string;
   imageUrl: string;
+  action: string;
 };
 
-const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, description, imageUrl }) => {
+const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, description, imageUrl, action }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -47,7 +48,7 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
         <div className='flex justify-center mt-4'>
 
           <Button 
-          onClick={() => window.open('mailto:info@nachlass-verwerten.de')}
+          onClick={() => window.open(action)}
           className="w-4/5 bg-primary rounded-full text-secondary text-[10px] md:text-xs hover:border-white hover:border hover:bg-secondary hover:text-primary">
 
             DIREKT KONTAKTIEREN

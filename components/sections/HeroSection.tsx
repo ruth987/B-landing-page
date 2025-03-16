@@ -30,7 +30,9 @@ const HeroSection: React.FC = () => {
         <div className='grid grid-cols-2 md:grid-cols-4 items-center justify-between w-full gap-6 md:gap-0'>
           <div onClick={() => router.push('/services')} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>1</p>
-              <p className='md:text-sm text-xs'>Maximale Transparenz</p>
+              <p className='md:text-sm text-xs'>Maximale
+              <br />
+              Transparenz</p>
           </div>
           <div onClick={() => router.push('/services')} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>2</p>

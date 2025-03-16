@@ -56,11 +56,11 @@ const Section2 = () => {
             {/* Right Content (Logo) */}
             <div className="hidden md:w-1/2 w-full md:flex justify-center mt-10 md:mt-0">
                 <Image
-                    src="/images/l-logo-2.svg"
+                    src="/images/WHITE_ThickenedLogo_Quattrocento Sans_Bold_Vertical_DAN_1.svg"
                     alt="Bühne & Fawier Logo"
-                    width={200}
-                    height={200}
-                    className="md:w-[200px] w-[150px]"
+                    width={230}
+                    height={230}
+                    className="md:w-[230px] w-[150px]"
                 />
             </div>
         </section>

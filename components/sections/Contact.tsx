@@ -76,7 +76,7 @@ const Contact = () => {
                         />
                     </div>
                     
-                    <div className='md:w-1/2 w-full bg-secondary h-full'>
+                    <div className='md:w-1/2 w-full bg-secondary-light h-full'>
                         <div 
                             onClick={handleClose}
                             className='flex md:justify-end justify-between w-full md:p-4 px-4 cursor-pointer'>
@@ -89,7 +89,7 @@ const Contact = () => {
                                     priority
                                 />
                             </div>
-                            <X className='md:text-white stroke-[1.5] w-8 h-8 md:mt-0 mt-8 text-primary ' />
+                            <X className='stroke-[1.5] w-8 h-8 md:mt-0 mt-8 text-primary ' />
                         </div>
 
                         <div className='flex flex-col justify-center items-center'>
@@ -117,7 +117,7 @@ const Contact = () => {
                                         className='flex items-center gap-4 md:py-3 py-2 w-full cursor-pointer hover:opacity-80 transition-opacity'
                                         onClick={() => handleClick(info.action)}
                                     >
-                                        <div className='text-white rounded-full border border-primary p-4 md:text-3xl text-xl font-semibold'>
+                                        <div className='text-primary rounded-full border border-primary p-4 md:text-3xl text-xl font-semibold'>
                                             {info.icon}
                                         </div>
                                         <div className='text-primary md:text-base text-xs items-start'>
