@@ -68,10 +68,10 @@ const Contact = () => {
                 <>
                     <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
                         <Image
-                            src="/images/White_vert_logo.svg"
+                            src="/images/WHITE_ThickenedLogo_Quattrocento Sans_Bold_Vertical_DAN_1.svg"
                             alt="logo"
-                            width={420}
-                            height={420}
+                            width={320}
+                            height={320}
                             priority
                         />
                     </div>
