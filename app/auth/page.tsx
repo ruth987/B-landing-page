@@ -17,7 +17,7 @@ export default function AuthPage() {
       router.push('/')
       router.refresh()
     } catch (err) {
-      setError('Invalid access key')
+      setError(`Invalid access key ${err}`)
     }
   }
 
