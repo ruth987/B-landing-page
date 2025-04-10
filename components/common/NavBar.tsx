@@ -85,16 +85,15 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
 
                     <Button
                         onClick={() => {
-                            router.push('/about-us');
+                            document.getElementById('about-us')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
                         label="ÜBER UNS"
                         white={white}
-
                     />
                     <Button
                         onClick={() => {
-                            router.push('/services');
+                            document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
                         label="UNSERE LEISTUNGEN"
@@ -102,7 +101,7 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                     />
                     <Button
                         onClick={() => {
-                            router.push('/contact');
+                            document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
                         label="KONTAKT"
