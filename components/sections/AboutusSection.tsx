@@ -4,7 +4,7 @@ const AboutusSection: React.FC = () => {
   return (
     <section
       className="relative h-screen flex items-start md:pt-44 pt-32 md:justify-start justify-center md:pl-40 pl-4 text-white bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/herobg.png')" }}
+      style={{ backgroundImage: "url('/images/group-photo.jpg')" }}
     >
 
       <div className="absolute inset-0 bg-primary bg-opacity-60"></div>

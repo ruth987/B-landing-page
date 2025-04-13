@@ -9,9 +9,9 @@ const ServiceSection = () => {
             
             <h2 className="md:text-3xl text-xl font-semibold leading-relaxed max-w-4xl mx-auto"
               >
-              &quot;Wir beraten Sie zu Zeithorizont,
+              &quot;Wir beraten Sie persönlich zu Zeithorizont, 
               <br />
-              nachhaltiger Abwicklung und Ankauf.&quot;
+              Bewertung der Vermögensgegenstände und den besten Vermarktungsstrategien.&quot;
             </h2>
           </div>
         </div>

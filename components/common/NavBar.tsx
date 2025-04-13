@@ -18,7 +18,7 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
     };
 
     return (
-        <nav className={`relative bg-transparent text-white`}>
+        <nav className={` w-full z-50 bg-transparent text-white`}>
             <div className="flex justify-between items-center px-4 md:px-20">
                 <div className="cursor-pointer" onClick={() => router.push('/')}>
                     {
@@ -40,13 +40,11 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                             />
                         )
                     }
-
-
                 </div>
 
                 {/* Mobile menu button */}
                 <button
-                    className="p-2"
+                    className="p-2 fixed top-10 right-4 md:right-20 bg-primary/40 backdrop-blur-sm rounded-full"
                     onClick={toggleMenu}
                 >
                     {white ? (
@@ -57,7 +55,6 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                             : <Menu strokeWidth={1} className="text-primary md:w-10 md:h-10 w-6 h-6" />
                     )}
                 </button>
-
 
                 {/* Desktop menu */}
                 {/* <div className="hidden md:flex gap-4 pt-4">
@@ -80,9 +77,8 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
             </div>
 
             {/* Mobile menu */}
-            <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute w-full bg-transparent justify-end md:px-20 px-4 py-4`}>
-                <div className='flex flex-col gap-4 justify-end items-end -space-y-4 md:space-y-0'>
-
+            <div className={`${isMenuOpen ? 'flex' : 'hidden'} fixed top-24 right-0 bg-primary/30 justify-end md:px-20 px-4 py-4 rounded-bl-lg`}>
+                <div className='flex flex-col gap-4 justify-end items-end'>
                     <Button
                         onClick={() => {
                             document.getElementById('about-us')?.scrollIntoView({behavior: 'smooth'});
@@ -100,15 +96,20 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                         white={white}
                     />
                     <Button
-                        onClick={() => {
-                            document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
-                            setIsMenuOpen(false);
-                        }}
+                        onClick={() => router.push("/contact")}
                         label="KONTAKT"
                         white={white}
                     />
+                    <Button
+                        onClick={() => {
+                            document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'});
+                            setIsMenuOpen(false);
+                        }}
+                        label="FAQ"
+                        white={white}
+                    />
+                    
                 </div>
-
             </div>
         </nav>
     );

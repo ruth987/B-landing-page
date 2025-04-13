@@ -22,7 +22,7 @@ const ServicesSection: React.FC = () => {
             </div>
             <div className='md:w-1/2 w-full h-[300px] relative'>
                 <Image 
-                src="/images/services-right.png" 
+                src="/images/Einpacken.jpeg" 
                 alt="services-section" 
                 fill
                 className='object-cover'

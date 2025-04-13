@@ -17,15 +17,14 @@ const IntroSection = () => {
                             <br />
                             Ihre Experten für
                             <br />
-                            diskrete Nachlasslösungen
+                            die individuelle Beratung und diskrete Vermarktung
                         </h1>
                     </div>
 
                     <p className="text-gray-600 md:text-sm text-xs leading-relaxed">
-                        Wir sind spezialisiert auf die Verwertung hochwertiger Nachlässe
-                        und <br className='hidden md:block' />
-                        bieten exklusive Lösungen für Erben, die sich nicht selbst um
-                        die <br className='hidden md:block' />Abwicklung kümmern möchten.
+                    Mit unserer Erfahrung, unserem feinen Gespür für Werte und der nötigen Diskretion sorgen wir dafür,
+                    dass Ihr Nachlass sicher und in Ihrem Sinne geregelt wird. Leise. Verlässlich. Ohne Umwege. An unseren 
+                    Standorten in Nordrhein-Westfalen und dem Großraum Frankfurt am Main und überall dort, wo Sie uns brauchen.
                     </p>
 
                     
@@ -34,7 +33,7 @@ const IntroSection = () => {
                 {/* Right Side - Image or Content */}
                 <div className="bg-blue-50 rounded-lg h-full min-h-[400px]">
                     <Image 
-                    src="/images/section4.jpg" 
+                    src="/images/porche.png" 
                     alt="Intro Section" 
                     width={500} 
                     height={500} 

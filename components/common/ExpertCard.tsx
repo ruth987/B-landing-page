@@ -16,17 +16,16 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
 
   return (
     <div className={`flex flex-col bg-white rounded-xl shadow-lg p-6 text-primary-text w-full max-w-xs 
-                     ${isExpanded ? 'h-auto' : 'h-[500px]'}`}>
-      <div className="-mx-6 -mt-6">
+                     ${isExpanded ? 'h-auto' : 'h-[550px]'}`}>
+      <div className="-mx-6 -mt-6 h-[300px]">
         <Image 
           src={imageUrl} 
           alt={name} 
           width={300} 
-          height={300} 
-          className="w-full rounded-t-xl"
+          height={250} 
+          className="w-full h-full object-cover rounded-t-xl object-top"
         />
       </div>
-      
       <h3 className="md:text-xl text-lg font-bold mt-4">{name}</h3>
       <p className="text-secondary-text font-medium text-sm">{specialization}</p>
       
@@ -46,11 +45,9 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
         </div>
         
         <div className='flex justify-center mt-4'>
-
           <Button 
           onClick={() => window.open(action)}
           className="w-4/5 bg-primary rounded-full text-secondary text-[10px] md:text-xs hover:border-white hover:border hover:bg-secondary hover:text-primary">
-
             DIREKT KONTAKTIEREN
           </Button>
         </div>

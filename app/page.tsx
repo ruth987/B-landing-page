@@ -44,7 +44,7 @@ export default function Home() {
         <AssetsSection />
         <EstateServices />
         <CollectionCard />
-
+      <div id="faq"></div>
       <Faqs />
       <TextBox text="Nutzen Sie unsere kostenlose Erstberatung unter 069 456 7890" />
       <StickyButton />
