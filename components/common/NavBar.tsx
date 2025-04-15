@@ -100,14 +100,14 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                         label="KONTAKT"
                         white={white}
                     />
-                    <Button
+                    {/* <Button
                         onClick={() => {
                             document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
                         label="FAQ"
                         white={white}
-                    />
+                    /> */}
                     
                 </div>
             </div>

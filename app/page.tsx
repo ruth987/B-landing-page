@@ -8,15 +8,14 @@ import StickyButton from "@/components/common/StickyButton";
 import Section2 from "@/components/sections/Section2";
 import Offers from "@/components/sections/Offers";
 import IntroSection from "@/components/sections/IntroSection";
-import ServiceSection from "@/components/sections/ServiceSection";
 import ConsultationSection from "@/components/sections/ConsultationSection";
 import AboutusSection from "@/components/sections/AboutusSection";
-import CollectionCard from "@/components/common/CollectionCard";
 import ExpertSection from "@/components/sections/ExpertSection";
 import EstateServices from "@/components/sections/EstateServices";
 import AssetsSection from "@/components/sections/AssetsSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import OurProcessSection from "@/components/sections/OurProcessSection";
+import TextSection from "@/components/sections/ServiceSection";
 
 export default function Home() {
 
@@ -27,14 +26,17 @@ export default function Home() {
       <Section2 />
       <Offers />
       <IntroSection />
-      <ServiceSection />
+        <TextSection 
+        topText="Professionelle Vermögensverwertung"
+        text1="Wir beraten Sie persönlich zu Zeithorizont, Bewertung der Vermögensgegenstände und den" 
+        text2="besten Vermarktungsstrategien." />
       <ConsultationSection />
       
       {/* ABOUT US SECTION */}
       <div id="about-us"></div>
       <AboutusSection />
       <ExpertSection />
-      <CollectionCard />
+      {/* <CollectionCard /> */}
 
       {/* OUR SERVICES SECTION */}
       <div id="services"></div>
@@ -43,7 +45,11 @@ export default function Home() {
         <OurProcessSection />
         <AssetsSection />
         <EstateServices />
-        <CollectionCard />
+        {/* <CollectionCard /> */}
+        <TextSection 
+        topText="Kostenlose Erstberatung"
+        text1="Wir glauben, dass die richtige Entscheidung immer diejenige" 
+        text2="ist, die Ruhe und Sicherheit bringt." />
       <div id="faq"></div>
       <Faqs />
       <TextBox text="Nutzen Sie unsere kostenlose Erstberatung unter 069 456 7890" />

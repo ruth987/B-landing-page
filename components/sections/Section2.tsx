@@ -20,7 +20,7 @@ const Section2 = () => {
 
                 {/* Profile Images */}
                 <div className="flex items-center mt-10 relative">
-                    <Image
+                    {/* <Image
                         src="/images/expert.png"
                         alt="Expert 1"
                         width={50}
@@ -40,7 +40,7 @@ const Section2 = () => {
                         width={50}
                         height={50}
                         className="rounded-full md:w-16 md:h-16 w-12 h-12 object-cover border-2 border-white absolute md:left-20 left-16 z-30"
-                    />
+                    /> */}
                 </div>
 
                 {/* Description */}

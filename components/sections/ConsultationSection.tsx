@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 const ConsultationSection = () => {
   const router = useRouter();
   return (
-    <section className="container">
+    <section className="container mb-6 md:mb-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left side - Image */}
         <div className="relative w-full aspect-[4/3]">

@@ -20,7 +20,7 @@ const ServicesSection: React.FC = () => {
                 und professionelle Lösung für Ihren Nachlass. 
                 </p>
             </div>
-            <div className='md:w-1/2 w-full h-[300px] relative'>
+            <div className='md:w-1/2 w-full md:h-[500px] h-[300px] relative'>
                 <Image 
                 src="/images/Einpacken.jpeg" 
                 alt="services-section" 
