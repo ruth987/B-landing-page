@@ -12,56 +12,64 @@ const HeroSection: React.FC = () => {
         </div>
       <div className="absolute inset-0 bg-primary bg-opacity-10"></div>
       <div className="relative z-10 text-left md:max-w-3xl p-6 text-white">
-        <p className="text-xs">Nachlassmanagement ohne Unsicherheiten</p>
-        <h1 className="md:text-6xl text-4xl font-bold pt-2 pb-4">Nachlass optimal
-        <br />verwerten.</h1>
+        <p className="text-xs">Zuverlässige Lösungen bei Erbschaft, Scheidung, Umzug und Auswanderung</p>
+        <h1 className="md:text-6xl text-2xl font-bold pt-2 pb-4">Vermögen und Nachlass  
+        <br />optimal verwerten.</h1>
         <p className='text-sm'>
-        Sie haben geerbt und wissen nicht, wo Sie anfangen sollen?
-        <br />
-        Ihr Nachlass umfasst hochwertige Immobilien, Kunst, Antiquitäten oder Fahrzeuge?
-        <br />
-        Sie möchten eine reibungslose, diskrete und professionelle Abwicklung?
+          Wir sind Ihr vertrauensvoller Partner für alle Themen von der Bewertung über die 
+          <br />
+          Logistik bis hin zu der Verwertung von Immobilien, Fahrzeugen, Kunst und Antiquitäten
         </p>
 
       </div>
-      <div className='absolute md:bottom-20 bottom-10 left-0 right-0 md:px-44 px-12'>
-        <div className='grid grid-cols-2 md:grid-cols-4 items-center justify-between w-full gap-6 md:gap-0'>
+      <div className='absolute md:bottom-20 bottom-10 left-0 right-0 md:px-24 px-12'>
+        <div className='grid grid-cols-2 md:grid-cols-5 items-center justify-between w-full gap-6 md:gap-10'>
           <div onClick={() => {
-                            document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
+                            document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>1</p>
-              <p className='md:text-sm text-xs'>Maximale
+              <p className='md:text-sm text-xs'>Unabhängige
               <br />
-              Transparenz</p>
+              Beratung</p>
           </div>
           <div onClick={() => {
-                            document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
+                            document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>2</p>
               <p className='md:text-sm text-xs'>
               Individuelle
               <br />
-              Vermarktungsstrategie
+              Verwertungsstrategien
               </p>
           </div>
           <div onClick={() => {
-                            document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
+                            document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>3</p>
               <p className='md:text-sm text-xs'>
-              Diskrete
+              Diskretion und 
               <br />
-              Abwicklung
+              Zeitersparnis
               </p>
           </div>
           <div onClick={() => {
-                            document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
+                            document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>4</p>
               <p className='md:text-sm text-xs'>
-              Europaweites
+              Persönlicher Service & 
               <br />
-              Netzwerk
+              maximale Transparenz
+              </p>
+          </div>
+          <div onClick={() => {
+                            document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
+                        }}  className='flex items-center gap-2 cursor-pointer'>
+              <p className='md:text-6xl text-xl'>5</p>
+              <p className='md:text-sm text-xs'>
+              Vertrauensvolle
+              <br />
+              Partnerschaften
               </p>
           </div>
         </div>

@@ -24,7 +24,7 @@ const contactInformations = [
     },
     {
         icon: <Home />,
-        text: 'Bühne & Fawier \nNachlassberatung \nDamte Str 36\n51674 Wiehl\nDeutschland'
+        text: 'Bühne & Fawier \nDamte Str 36\n51674 Wiehl\nDeutschland'
     }
 ]
 
@@ -68,7 +68,7 @@ const Contact = () => {
                 <>
                     <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
                         <Image
-                            src="/images/WHITE_ThickenedLogo_Quattrocento Sans_Bold_Vertical_DAN_1.svg"
+                            src="/images/Logo_White.svg"
                             alt="logo"
                             width={320}
                             height={320}
@@ -82,7 +82,7 @@ const Contact = () => {
                             className='flex md:justify-end justify-between w-full md:p-4 px-4 cursor-pointer'>
                             <div className='md:hidden'>
                                 <Image
-                                    src="/images/Blue_Hori_logo.svg"
+                                    src="/images/Logo_Horizontal_Black.svg"
                                     alt="logo"
                                     width={100}
                                     height={100}
@@ -95,7 +95,7 @@ const Contact = () => {
                         <div className='flex flex-col justify-center items-center'>
                             <div className='rounded-full overflow-hidden md:w-[150px] w-[100px] md:h-[150px] h-[100px] ring-2 ring-white'>
                                 <Image
-                                    src="/images/expert.png"
+                                    src="/images/group-photo.jpg"
                                     alt="person profile"
                                     width={200}
                                     height={200}

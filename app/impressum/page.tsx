@@ -3,7 +3,6 @@ import React from 'react'
 import TopContact from '@/components/common/TopContact'
 import NavBar from '@/components/common/NavBar'
 import Footer from '@/components/common/Footer'
-import TextBox from '@/components/common/TextBox'
 
 const page = () => {
   return (
@@ -54,7 +53,6 @@ const page = () => {
         </section>
       </div>
       <div className='sticky bottom-0'>
-      <TextBox text="Nutzen Sie unsere kostenlose Erstberatung unter 069 456 7890" />
         <Footer />
       </div>
     </div>

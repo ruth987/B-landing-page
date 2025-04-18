@@ -81,10 +81,10 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                 <div className='flex flex-col gap-4 justify-end items-end'>
                     <Button
                         onClick={() => {
-                            document.getElementById('about-us')?.scrollIntoView({behavior: 'smooth'});
+                            document.getElementById('promise')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
-                        label="ÜBER UNS"
+                        label="Unser Versprechen"
                         white={white}
                     />
                     <Button
@@ -92,22 +92,27 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                             document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
-                        label="UNSERE LEISTUNGEN"
+                        label="Unsere Leistungen"
                         white={white}
                     />
                     <Button
-                        onClick={() => router.push("/contact")}
-                        label="KONTAKT"
+                        onClick={() => router.push("/about-us")}
+                        label="Unsere Story"
                         white={white}
                     />
-                    {/* <Button
+                    <Button
                         onClick={() => {
                             document.getElementById('faq')?.scrollIntoView({behavior: 'smooth'});
                             setIsMenuOpen(false);
                         }}
-                        label="FAQ"
+                        label="FAQ Vermögensverwertung"
                         white={white}
-                    /> */}
+                    />
+                    <Button
+                        onClick={() => router.push("/contact")}
+                        label="Kontakt"
+                        white={white}
+                    />
                     
                 </div>
             </div>

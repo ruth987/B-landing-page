@@ -3,7 +3,7 @@ import React from 'react';
 const AboutusSection: React.FC = () => {
   return (
     <section
-      className="relative md:h-screen flex items-start md:pt-44 pt-32 md:justify-start justify-center md:pl-40 pl-4 text-white bg-cover bg-center"
+      className="relative md:h-screen flex items-start md:pt-80 pt-32 md:justify-start justify-center md:pl-40 pl-4 text-white bg-cover bg-center"
       style={{ backgroundImage: "url('/images/group-photo.jpg')" }}
     >
 

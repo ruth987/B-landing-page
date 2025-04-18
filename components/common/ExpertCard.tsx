@@ -57,3 +57,5 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
 };
 
 export default ExpertCard;
+
+

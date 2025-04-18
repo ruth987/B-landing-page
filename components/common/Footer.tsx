@@ -17,21 +17,15 @@ const Footer = () => {
                  className='md:w-[150px] w-[70px] h-full'
                  />
             </div>
-            <div className='text-secondary-light md:text-lg text-[10px] font-semibold flex items-center'>
-            Nachlass
-            <br />
-            optimal
-            <br />
-            verwerten.
-            </div>
         </div>
         <div className='flex flex-col md:gap-10 gap-4'>
             <div className='md:text-sm text-[10px]'>
             Bühne & Fawier
             <br />
-            XXXX
+            Damte Str 36
             <br />
-            XXXX
+            51674 Wiehl
+
             </div>
             <div className='flex md:gap-5 gap-2 text-[10px] md:text-xs'>
                 <p className='cursor-pointer' onClick={() => router.push('/cookies')}>Cookies</p>
