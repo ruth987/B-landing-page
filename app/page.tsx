@@ -20,6 +20,7 @@ export default function Home() {
       <Contact />
       <HeroSection />
       <Section2 />
+      <div id="promise"></div>
       <Offers />
       <IntroSection />
 

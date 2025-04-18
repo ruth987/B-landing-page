@@ -96,7 +96,10 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                         white={white}
                     />
                     <Button
-                        onClick={() => router.push("/about-us")}
+                        onClick={() => {
+                            document.getElementById('about-us')?.scrollIntoView({behavior: 'smooth'});
+                            setIsMenuOpen(false);
+                        }}
                         label="Unsere Story"
                         white={white}
                     />
