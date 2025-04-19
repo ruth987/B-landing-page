@@ -66,9 +66,9 @@ const Contact = () => {
                 </div>
             ) : (
                 <>
-                    <div className='hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
+                    <div onClick={() => router.push('/')} className='cursor-pointer hidden md:flex bg-primary p-10 w-1/2 h-full justify-center items-center'>
                         <Image
-                            src="/images/Logo_White.svg"
+                            src="/images/Logo_Whitep.png"
                             alt="logo"
                             width={320}
                             height={320}
@@ -80,12 +80,12 @@ const Contact = () => {
                         <div 
                             onClick={handleClose}
                             className='flex md:justify-end justify-between w-full md:p-4 px-4 cursor-pointer'>
-                            <div className='md:hidden'>
+                            <div onClick={() => router.push('/')} className='md:hidden cursor-pointer pt-8'>
                                 <Image
-                                    src="/images/Logo_Horizontal_Black.svg"
+                                    src="/images/Logo_Horizontal_Blackp.png"
                                     alt="logo"
-                                    width={100}
-                                    height={100}
+                                    width={130}
+                                    height={130}
                                     priority
                                 />
                             </div>

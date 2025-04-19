@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex gap-2 cursor-pointer'  onClick={() => router.push('/')}>
             <div className="cursor-pointer" onClick={() => router.push('/')}>
                 <Image
-                 src="/images/White_vert_logo.svg"
+                 src="/images/Logo_Whitep.png"
                  alt="logo"
                  width={110}
                  height={110}
