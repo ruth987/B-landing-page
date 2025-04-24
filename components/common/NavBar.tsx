@@ -38,7 +38,7 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
                                 alt="Logo"
                                 width={150}
                                 height={100}
-                                className="w-28 md:w-48 h-24 md:h-28 "
+                                className="w-28 md:w-48 h-20 md:h-28 "
                             />
                         ) : (
                             <Image

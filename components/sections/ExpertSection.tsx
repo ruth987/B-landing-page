@@ -37,7 +37,7 @@ const ExpertSection: React.FC = () => {
           mit Weitsicht, Diskretion und Verantwortungsbewusstsein zu vermarkten.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row flex-wrap justify-center gap-4 md:gap-8">
+      <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 md:gap-8">
         {experts.map((expert, index) => (
           <ExpertCard key={index} {...expert} />
         ))}

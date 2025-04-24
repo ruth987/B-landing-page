@@ -22,7 +22,7 @@ const IntroSection = () => {
                         </h1>
                     </div>
 
-                    <p className="text-gray-600 md:text-sm text-xs leading-relaxed">
+                    <p className="text-gray-600 md:text-lg text-sm leading-relaxed">
                         Mit unserer Erfahrung, unserem feinen Gespür für Werte und der nötigen Diskretion sorgen wir dafür, 
                         dass Ihr Nachlass sicher und in Ihrem Sinne geregelt wird. Leise. Verlässlich. Ohne Umwege. An unseren 
                         Standorten in Nordrhein-Westfalen und dem Großraum Frankfurt am Main und überall dort, wo Sie uns brauchen.
