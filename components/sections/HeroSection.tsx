@@ -12,13 +12,13 @@ const HeroSection: React.FC = () => {
         </div>
       <div className="absolute inset-0 bg-primary bg-opacity-10"></div>
       <div className="relative z-10 text-left md:max-w-3xl p-6 text-white">
-        <p className="text-xs">Zuverlässige Lösungen bei Erbschaft, Scheidung, Umzug und Auswanderung</p>
+        <p className="md:text-lg text-sm">Zuverlässige Lösungen bei Erbschaft, Scheidung, Umzug und Auswanderung</p>
         <h1 className="md:text-6xl text-2xl font-bold pt-2 pb-4">Vermögen und Nachlass  
         <br />optimal verwerten.</h1>
-        <p className='text-sm'>
+        <p className='md:text-xl text-lg'>
           Wir sind Ihr vertrauensvoller Partner für alle Themen von der Bewertung über die 
           <br />
-          Logistik bis hin zu der Verwertung von Immobilien, Fahrzeugen, Kunst und Antiquitäten
+          Logistik bis hin zu der Verwertung von Immobilien, Fahrzeugen, Kunst und Antiquitäten.
         </p>
 
       </div>
@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
                             document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }} className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>1</p>
-              <p className='md:text-sm text-xs'>Unabhängige
+              <p className='md:text-[16px] font-semibold text-xs'>Unabhängige
               <br />
               Beratung</p>
           </div>
@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
                             document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>2</p>
-              <p className='md:text-sm text-xs'>
+              <p className='md:text-[16px] font-semibold text-xs'>
               Individuelle
               <br />
               Verwertungsstrategien
@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
                             document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>3</p>
-              <p className='md:text-sm text-xs'>
+              <p className='md:text-[16px] font-semibold text-xs'>
               Diskretion und 
               <br />
               Zeitersparnis
@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
                             document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>4</p>
-              <p className='md:text-sm text-xs'>
+              <p className='md:text-[16px] font-semibold text-xs'>
               Persönlicher Service & 
               <br />
               maximale Transparenz
@@ -66,7 +66,7 @@ const HeroSection: React.FC = () => {
                             document.getElementById('offers')?.scrollIntoView({behavior: 'smooth'});
                         }}  className='flex items-center gap-2 cursor-pointer'>
               <p className='md:text-6xl text-xl'>5</p>
-              <p className='md:text-sm text-xs'>
+              <p className='md:text-[16px] font-semibold text-xs'>
               Vertrauensvolle
               <br />
               Partnerschaften

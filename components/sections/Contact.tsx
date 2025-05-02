@@ -24,7 +24,7 @@ const contactInformations = [
     },
     {
         icon: <Home />,
-        text: 'Bühne & Fawier \nDamte Str 36\n51674 Wiehl\nDeutschland'
+        text: 'Bühne & Fawier GbR \nDamte Str 36\n51674 Wiehl\nDeutschland'
     }
 ]
 

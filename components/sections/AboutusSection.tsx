@@ -9,8 +9,7 @@ const AboutusSection: React.FC = () => {
 
       <div className="absolute inset-0 bg-primary bg-opacity-60"></div>
       <div className="relative z-10 text-left max-w-3xl p-6">
-        <p className="md:text-xs text-[10px]">Kompetenz, Diskretion und ein starkes Netzwerk für Ihre Werte.</p>
-        <h1 className="md:text-6xl text-3xl font-bold pt-2">Bühne & Fawier<br />Ihr Experten-Team</h1>
+        <h1 className="md:text-6xl text-3xl font-bold pt-2">Bühne & Fawier</h1>
       </div>
     </section>
   );

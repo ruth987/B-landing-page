@@ -14,7 +14,7 @@ const page = () => {
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Diensteanbieter</h2>
-          <p>Buehne & Fawier</p>
+          <p>Buehne & Fawier GbR</p>
           <p>Damte Str 36</p> 
           <p>51674 Wiehl</p>
           <p>Deutschland</p>

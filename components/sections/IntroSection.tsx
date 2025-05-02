@@ -3,16 +3,17 @@ import Image from 'next/image';
 
 const IntroSection = () => {
     return (
-        <section className="container mx-auto px-4 py-20 max-w-7xl">
+        <section className=" bg-primary text-white">
+            <div className='container mx-auto px-4 py-20 max-w-7xl'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 {/* Left Content */}
                 <div className="space-y-2">
-                    <p className="text-gray-600 md:text-xs text-[10px]">
+                    <p className="md:text-xs text-[10px]">
                         Wenn Werte zählen. Und Sicherheit entscheidend ist.
                     </p>
 
                     <div className="space-y-4">
-                        <h1 className="md:text-4xl text-2xl font-bold text-primary leading-tight">
+                        <h1 className="md:text-4xl text-2xl font-bold leading-tight">
                         Persönliche Beratung. 
                         <br />
                         Klare Strategie. 
@@ -22,7 +23,7 @@ const IntroSection = () => {
                         </h1>
                     </div>
 
-                    <p className="text-gray-600 md:text-lg text-sm leading-relaxed">
+                    <p className=" md:text-lg text-sm leading-relaxed">
                         Mit unserer Erfahrung, unserem feinen Gespür für Werte und der nötigen Diskretion sorgen wir dafür, 
                         dass Ihr Nachlass sicher und in Ihrem Sinne geregelt wird. Leise. Verlässlich. Ohne Umwege. An unseren 
                         Standorten in Nordrhein-Westfalen und dem Großraum Frankfurt am Main und überall dort, wo Sie uns brauchen.
@@ -39,6 +40,7 @@ const IntroSection = () => {
                     className="w-full h-full object-cover"
                     />
                 </div>
+            </div>
             </div>
         </section>
     );

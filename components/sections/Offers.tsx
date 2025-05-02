@@ -41,12 +41,12 @@ const Offers = () => {
               nur wirtschaftliche. Deshalb hören wir zuerst zu. Und sprechen erst dann Empfehlungen aus. 
               Sie behalten in jedem Schritt die Kontrolle. Wir sorgen dafür, dass Sie immer genau wissen, 
               wo Sie stehen. Ohne Umwege, ohne Unklarheiten. Nur verlässliche Unterstützung auf Augenhöhe, 
-              die Ihnen hilft, sich mit anderen Aufgaben zu beschäftigen'
+              die Ihnen hilft, sich mit anderen Aufgaben zu beschäftigen.'
               />
                <OfferCard
               number={5}
               title='Vertrauensvolle Partnerschaften'
-              description='Manchmal entscheidet die Wahl der richtigen Partner über den Erfolg. 
+              description='Die Wahl der richtigen Partner entscheidet über den Erfolg.
               Unser weltweites Netzwerk aus anerkannten Sammlern, Gutachtern, Auktionshäusern und 
               Juristen öffnet Türen, die sonst verschlossen bleiben, insbesondere bei der Auktion 
               von wertvollen Objekten. So sorgen wir dafür, dass Ihre Werte nicht nur den richtigen 

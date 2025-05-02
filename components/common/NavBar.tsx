@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import Button from './Button';
 import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 interface NavBarProps {
     white?: boolean;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
+const NavBar: React.FC<NavBarProps> = () => {
     const router = useRouter();
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,75 +28,65 @@ const NavBar: React.FC<NavBarProps> = ({ white = true }) => {
     };
 
     return (
-        <nav className={`w-full bg-transparent text-white`}>
-            <div className="flex justify-between items-center px-4 md:px-20 relative h-24 md:h-32">
+        <nav className="w-full bg-primary text-white fixed top-0 z-50">
+            <div className="flex justify-between items-center px-4 md:px-20 h-16">
+                {/* Left section with logo */}
                 <div className="cursor-pointer" onClick={() => router.push('/')}>
-                    {
-                        white ? (
-                            <Image
-                                src="/images/Logo_Horizontal_Whitep.png"
-                                alt="Logo"
-                                width={150}
-                                height={100}
-                                className="w-28 md:w-48 h-20 md:h-28 "
-                            />
-                        ) : (
-                            <Image
-                                src="/images/Logo_Horizontal_Blackp.png"
-                                alt="Logo"
-                                width={150}
-                                height={100}
-                                className="w-28 md:w-48 h-24 md:h-28 "
-                            />
-                        )
-                    }
+                    <Image
+                        src="/images/Logo_Horizontal_Whitep.png"
+                        alt="Logo"
+                        width={150}
+                        height={100}
+                        className="w-20 md:w-36 h-24 pt-3"
+                    />
                 </div>
 
-                {/* Mobile menu button */}
+                {/* Center section with phone */}
+                <div className="flex items-center">
+                    <Phone className="w-4 h-4" />
+                    <p className="px-2 text-xs md:text-sm">+49 (0)152 5682 1468</p>
+                </div>
+
+                {/* Right section with menu button */}
                 <button
-                    className="p-2 fixed top-10 right-4 md:right-20 bg-primary/40 backdrop-blur-sm rounded-full"
+                    className="p-2 rounded-full hover:bg-white/10 transition-colors"
                     onClick={toggleMenu}
                 >
-                    {white ? (
-                        isMenuOpen ? <X strokeWidth={1} className=" md:w-10 md:h-10 w-6 h-6" />
-                            : <Menu strokeWidth={1} className=" md:w-10 md:h-10 w-6 h-6" />
-                    ) : (
-                        isMenuOpen ? <X strokeWidth={1} className="text-primary md:w-10 md:h-10 w-6 h-6" />
-                            : <Menu strokeWidth={1} className="text-primary md:w-10 md:h-10 w-6 h-6" />
-                    )}
+                    {isMenuOpen ? 
+                        <X strokeWidth={1} className="w-6 h-6" /> :
+                        <Menu strokeWidth={1} className="w-6 h-6" />
+                    }
                 </button>
-
             </div>
 
             {/* Mobile menu */}
-            <div className={`${isMenuOpen ? 'flex' : 'hidden'} fixed top-24 right-0 bg-primary/30 justify-end md:px-20 px-4 py-4 rounded-bl-lg`}>
+            <div className={`${isMenuOpen ? 'flex' : 'hidden'} absolute top-full right-0 bg-primary/50 w-full md:w-auto justify-end md:px-20 px-4 py-4 border-t border-white/20`}>
                 <div className='flex flex-col gap-4 justify-end items-end'>
                     <Button
                         onClick={() => handleNavigation('promise')}
                         label="Unser Versprechen"
-                        white={white}
+                        white={true}
                     />
                     <Button
                         onClick={() => handleNavigation('services')}
                         label="Unsere Leistungen"
-                        white={white}
+                        white={true}
                     />
                     <Button
                         onClick={() => handleNavigation('about-us')}
-                        label="Unsere Story"
-                        white={white}
+                        label="Über uns"
+                        white={true}
                     />
                     <Button
                         onClick={() => handleNavigation('faq')}
                         label="FAQ Vermögensverwertung"
-                        white={white}
+                        white={true}
                     />
                     <Button
                         onClick={() => router.push("/contact")}
                         label="Kontakt"
-                        white={white}
+                        white={true}
                     />
-                    
                 </div>
             </div>
         </nav>

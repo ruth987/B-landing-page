@@ -10,7 +10,7 @@ const OurProcessSection = () => {
       description:
         "Eine klare Einschätzung ist die Grundlage für jede Entscheidung. Unsere zertifizierten Gutachter bewerten Ihren Nachlass und Ihr Vermögen – neutral, fundiert und unabhängig. Ob Immobilien, Kunstwerke, Sammlungen oder Antiquitäten: Sie erhalten eine transparente und realistische Einschätzung des Marktwertes.",
       bolddescription:"Wir analysieren Ihren Nachlass professionell und unabhängig. So schaffen wir Klarheit und eine verlässliche Basis für alle weiteren Schritte.",
-    },
+    },  
     {
       number: "2",
       title: "Individuelle Vermarktungsstrategie",
@@ -28,15 +28,19 @@ const OurProcessSection = () => {
   ];
 
   return (
-    <section className="bg-primary text-white md:pt-16 pt-10 md:pb-24 pb-16 px-4 md:px-8">
+    <section className="bg-secondary-light  md:pt-16 pt-10 md:pb-24 pb-16 px-4 md:px-8">
       <div className=" flex flex-col justify-between items-start md:ml-32 ml-4 md:mb-12 mb-8">
-        <h2 className="md:text-4xl text-2xl font-bold mt-2">Ganzheitliche Vermögensverwertung</h2>
+        <h2 className="md:text-4xl text-2xl font-bold mt-2">Unsere Leistungen</h2>
       
       </div>
       <div className='flex md:flex-row flex-col gap-6 md:gap-10 items-center justify-center'>
-        {steps.map((step) => (
-          <ProcessCard key={step.number} step={parseInt(step.number)} subtitle={step.subtitle} title={step.title} description={step.description} bolddescription={step.bolddescription} />
-        ))}
+        {steps.map((step) => {
+          const romanNumerals = ['I', 'II', 'III'];
+          const romanStep = romanNumerals[parseInt(step.number) - 1];
+          return (
+            <ProcessCard key={step.number} step={romanStep} subtitle={step.subtitle} title={step.title} description={step.description} bolddescription={step.bolddescription} />
+          );
+        })}
       </div>
     </section>
   )

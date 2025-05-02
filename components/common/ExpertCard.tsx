@@ -16,7 +16,7 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
 
   return (
     <div className={`flex flex-col bg-white rounded-xl shadow-lg p-6 text-primary-text w-full max-w-xs 
-                     ${isExpanded ? 'h-auto' : 'h-[550px]'}`}>
+                     ${isExpanded ? 'h-[800px]' : 'h-[550px]'}`}>
       <div className="-mx-6 -mt-6 h-[300px]">
         <Image 
           src={imageUrl} 
@@ -25,7 +25,7 @@ const ExpertCard: React.FC<ExpertCardProps> = ({ name, specialization, descripti
           height={250} 
           className="w-full h-full object-cover rounded-t-xl object-top"
         />
-      </div>
+      </div>  
       <h3 className="md:text-xl text-lg font-bold mt-4">{name}</h3>
       <p className="text-secondary-text font-medium text-sm">{specialization}</p>
       

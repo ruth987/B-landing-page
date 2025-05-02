@@ -10,21 +10,35 @@ import {
 
 const Faqs = () => {
   return (
+    <div className='bg-primary text-white'>
     <div className='flex md:flex-row flex-col items-start justify-center gap-5 md:gap-20 md:py-20 py-0 px-4 md:mt-2 mt-6 md:mx-20 '>
         <div className='flex flex-col gap-2 md:pt-10 pt-4'>
-            <p className='md:text-xs text-[10px]'>FAQS</p>
+            <p className='md:text-xs text-[10px]'>FAQ`S</p>
             <p className='md:text-4xl text-2xl font-semibold'>Häufige Fragen zur Nachlass- und Vermögensverwertung</p>
         </div>
         <div className='max-w-2xl w-full'>
             <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
+            <AccordionItem value="item-1">
+                    <AccordionTrigger>Wie unterscheiden Sie sich von anderen Marktteilnehmern?</AccordionTrigger>
+                    <AccordionContent>
+                        Wir bieten eine einzigartige Kombination aus diskreter, maßgeschneiderter Betreuung und einem
+                        umfassenden Service, der alle Vermögensarten (Immobilien, Fahrzeuge, Kunst, Schmuck etc.)
+                        abdeckt. Anders als traditionelle Makler, Händler oder Auktionshäuser übernehmen wir die
+                        gesamte Koordination – von der Bewertung über die Logistik und Betreuung bis zum Verkauf –
+                        und begleiten unsere Kunden in sensiblen Lebensphasen (z. B. Nachlässe, Scheidungen,
+                        Auswanderung) mit einem persönlichen Ansprechpartner. Dies reduziert Komplexität und
+                        emotionalen Stress für unsere Kunden, während ein exklusives Netzwerk aus Partnern (Notare,
+                        Makler, Sammlern, Auktionshäuser) maximale Werte erzielt.
+                    </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
                     <AccordionTrigger>Warum ist eine professionelle Beratung zur Verwertung so wichtig?</AccordionTrigger>
                     <AccordionContent>
                     Ein Nachlass besteht oft aus hochwertigen Gegenständen, die über viele Jahre gesammelt oder vererbt wurden: Kunst, Antiquitäten, Sammlungen und Designobjekte. Ohne Erfahrung auf diesen spezialisierten Märkten besteht das Risiko, Werte zu übersehen oder weit unter ihrem tatsächlichen Potenzial zu veräußern. Hinzu kommen rechtliche und steuerliche Fragen, die bei der Verwertung bedacht werden müssen.
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-2">
+                <AccordionItem value="item-3">
                     <AccordionTrigger>Was passiert in der kostenlosen Erstberatung?</AccordionTrigger>
                     <AccordionContent>
                     In der Erstberatung nehmen wir uns als professionelle Dienstleister viel Zeit, um Ihre individuelle Situation zu verstehen. Gemeinsam besprechen wir, welche Gegenstände Teil des zu vermarktenden Vermögens sind. Unser Service bezieht sich unter anderem auf Kunstwerke, Fahrzeuge bis hin zu Sammlungen oder Designklassikern.
@@ -39,7 +53,7 @@ const Faqs = () => {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-3">
+                <AccordionItem value="item-4">
                     <AccordionTrigger>Wie unterscheidet sich Ihre Beratung von anderen Anbietern?</AccordionTrigger>
                     <AccordionContent>
                         Unsere Klienten schätzen insbesondere die persönliche Begleitung und die maßgeschneiderte Vorgehensweise bei der Vermögensvermarktung. Jeder Fall erzählt eine andere Geschichte und genau so individuell behandeln wir ihn auch.
@@ -49,14 +63,14 @@ const Faqs = () => {
                         <br />
                         <br />
                         Dank unseres europaweiten Netzwerks aus Sammlern, Galerien und renommierten Auktionshäusern verfügen wir über
-                        eine Vielzahl an Vermarktungsoptionen
+                        eine Vielzahl an Vermarktungsoptionen.
                         <br />
                         <br />
                         Unsere Beratung ist transparent, diskret und von Beginn an auf Verlässlichkeit und Vertrauen ausgelegt.
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-4">
+                <AccordionItem value="item-5">
                     <AccordionTrigger>Was kostet eine komplette Abwicklung?</AccordionTrigger>
                     <AccordionContent>
                     Die Erstberatung ist grundsätzlich kostenlos. In diesem ersten Gespräch verschaffen wir uns gemeinsam einen Überblick über Ihre Situation und klären, welche nächsten Schritte bei der Abwicklung sinnvoll sind.
@@ -69,7 +83,7 @@ const Faqs = () => {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-5">
+                <AccordionItem value="item-6">
                     <AccordionTrigger>Wie geht es nach der Erstberatung weiter?</AccordionTrigger>
                     <AccordionContent>
                     Nach der Erstberatung folgt eine strukturierte Analyse Ihrer zu vermarktenden Vermögenswerte. Wir erstellen eine detaillierte Bewertung und entwickeln gemeinsam mit Ihnen eine maßgeschneiderte Strategie für die Vermarktung. Dabei behalten wir stets Ihren persönlichen Zeithorizont, Ihre Wünsche und Ihre Zielsetzungen im Blick. Anschließend koordinieren wir den gesamten Verkaufsprozess diskret und professionell bis hin zur Übergabe und Abwicklung.
@@ -79,7 +93,7 @@ const Faqs = () => {
                     </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6">
+                <AccordionItem value="item-7">
                     <AccordionTrigger>Kaufen Sie Objekte auch direkt an?</AccordionTrigger>
                     <AccordionContent>
                     Nein. Aus gutem Grund.
@@ -99,6 +113,7 @@ const Faqs = () => {
                 </AccordionItem>
             </Accordion>
         </div>
+    </div>
     </div>
   )
 }

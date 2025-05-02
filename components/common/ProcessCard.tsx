@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProcessCard = ({ step, subtitle, title, description, bolddescription }: { step: number, subtitle: string, title: string, description: string, bolddescription: string }) => {
+const ProcessCard = ({ step, subtitle, title, description, bolddescription }: { step: string, subtitle: string, title: string, description: string, bolddescription: string }) => {
     return (
         <div className='md:w-1/4 w-5/6 md:h-[420px] h-[500px] bg-white text-primary rounded-lg p-4 border-[0.8px] border-white flex flex-col justify-center md:justify-between'>
             <div className='flex text-primary items-center'>
